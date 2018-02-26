@@ -10,8 +10,11 @@ The purpose of this project is to explore the use of Google's Tensorflow machine
 
 ## Progress Report
 Week 1 - Installing Python with tensorflow and opencv and testing it
+
 Week 2 - Live video tracking using webcam, using the COCO model
+
 Week 3 - Testing out VOTT (video object tagging tool) and testing out swimmer detection
+
 Week 4 - Creating custom models and training AI to recognize swimmers
 
 
