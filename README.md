@@ -77,9 +77,9 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 	- Also learnt about the various export formats (e. gCNTK , Tensorflow (PascalVOC) or YOLO)
 - Labelled roughly 100 images with a Swimmer class
 	 - **Resources**:
-	 1. https://github.com/Microsoft/VoTT/blob/master/README.md
-	 2. https://pjreddie.com/darknet/yolo
-	 3. http://host.robots.ox.ac.uk/pascal/VOC
+	 	1. https://github.com/Microsoft/VoTT/blob/master/README.md
+		2. https://pjreddie.com/darknet/yolo
+	 	3. http://host.robots.ox.ac.uk/pascal/VOC
 
 **Week 4**
 - Exported swimmer data from VOTT to Pascal VOC format
@@ -87,5 +87,3 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 - Successfully implemented Transfer learning
 	- Trained the Faster-CNN model with the swimmer data set
 - Test case showing preliminary signs of success: 
-
-> Written with [StackEdit](https://stackedit.io/).
