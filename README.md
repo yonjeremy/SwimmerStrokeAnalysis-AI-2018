@@ -88,4 +88,4 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 - Successfully implemented Transfer learning
 	- Trained the Faster-CNN model with the swimmer data set
 - Test case showing preliminary signs of success: 
-![Alt Text](https://media.giphy.com/media/4NnPGpnhHSblZMq8Su/giphy.gif)
+![Alt Text](https://giphy.com/gifs/4NnPGpnhHSblZMq8Su)
