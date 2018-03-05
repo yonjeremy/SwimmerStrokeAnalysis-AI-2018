@@ -66,7 +66,7 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
  - Adapted Tensorflow scripts to classify from live video feed using OpenCV 
 	  - **Resources**:
 			 1. https://www.youtube.com/watch?v=2FmcHiLCwTU&t=77s
-			 2. https://pythonprogramming.net/introduction-use-tensorflow-object-detection-api-tutorial/
+			 2. https://pythonprogramming.net/introduction-use-tensorflow-object-detection-api-tutorial
 			 3. https://medium.com/@WuStangDan/step-by-step-tensorflow-object-detection-api-tutorial-part-1-selecting-a-model-a02b6aabe39e
 
 **Week 3**
@@ -76,8 +76,8 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 - Labelled roughly 100 images with a Swimmer class
 	 - **Resources**:
 			 1. https://github.com/Microsoft/VoTT/blob/master/README.md
-			 2. https://pjreddie.com/darknet/yolo/
-			 3. http://host.robots.ox.ac.uk/pascal/VOC/
+			 2. https://pjreddie.com/darknet/yolo
+			 3. http://host.robots.ox.ac.uk/pascal/VOC
 
 **Week 4**
 - Exported swimmer data from VOTT to Pascal VOC format
