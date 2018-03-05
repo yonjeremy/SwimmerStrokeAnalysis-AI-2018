@@ -88,4 +88,4 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 - Successfully implemented Transfer learning
 	- Trained the Faster-CNN model with the swimmer data set
 - Test case showing preliminary signs of success: 
-![Alt Text](https://github.com/yonjeremy/object-tracking-project-2018/tree/master/media/01_test_case.gif)
+![Alt Text](/media/01_test_case.gif)
