@@ -55,29 +55,32 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
  -  Set up the VM & development environment
  -  General research on how machine learning works
  - Installed Tensorflow, Python, OpenCV & dependencies 
+ 
  **Resources**:
-		 1. https://pythonprogramming.net
-		 2. https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
-		 3. https://opensource.com/article/17/11/intro-tensorflow
+1. https://pythonprogramming.net
+2. https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
+3. https://opensource.com/article/17/11/intro-tensorflow
 
 **Week 2**
  - Tested and learnt basics of how to use Tensorflow
  - Followed tutorials to use a basic image classifier
  - Adapted Tensorflow scripts to classify from live video feed using OpenCV 
-  **Resources**:
-		1. https://www.youtube.com/watch?v=2FmcHiLCwTU&t=77s
-		2. https://pythonprogramming.net/introduction-use-tensorflow-object-detection-api-tutorial
-		3. https://medium.com/@WuStangDan/step-by-step-tensorflow-object-detection-api-tutorial-part-1-selecting-a-model-a02b6aabe39e
+ 
+ **Resources**:
+1. https://www.youtube.com/watch?v=2FmcHiLCwTU&t=77s
+2. https://pythonprogramming.net/introduction-use-tensorflow-object-detection-api-tutorial
+3. https://medium.com/@WuStangDan/step-by-step-tensorflow-object-detection-api-tutorial-part-1-selecting-a-model-a02b6aabe39e
 
 **Week 3**
 - Researched different annotations tools
 - Learnt to use VOTT 
 	- Also learnt about the various export formats (e. gCNTK , Tensorflow (PascalVOC) or YOLO)
 - Labelled roughly 100 images with a Swimmer class
+
 **Resources**:
-		 1. https://github.com/Microsoft/VoTT/blob/master/README.md
-		 2. https://pjreddie.com/darknet/yolo
-		 3. http://host.robots.ox.ac.uk/pascal/VOC
+1. https://github.com/Microsoft/VoTT/blob/master/README.md
+2. https://pjreddie.com/darknet/yolo
+3. http://host.robots.ox.ac.uk/pascal/VOC
 
 **Week 4**
 - Exported swimmer data from VOTT to Pascal VOC format
@@ -85,4 +88,4 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 - Successfully implemented Transfer learning
 	- Trained the Faster-CNN model with the swimmer data set
 - Test case showing preliminary signs of success: 
-![First_Test](https://media.giphy.com/media/4NnPGpnhHSblZMq8Su/giphy.gif)
+![swimmerdetection](https://media.giphy.com/media/4NnPGpnhHSblZMq8Su/giphy.gif)
