@@ -109,7 +109,7 @@ Multi-label classification
 	- VOTT unable to multi-label object for multilabel classification
 	- Posted issue on VOTT github
 	- https://github.com/Microsoft/VoTT/issues/166
-
+- Researched [LabelImg](https://github.com/Labelbox/Labelbox#labelbox-pluggable-interface-architecture) as an alternative tool for labelling. Multi-labels may be [supported](https://github.com/Labelbox/Labelbox/issues/25).
 - Researched problems associated with multilabelling and multiclass object classification
 - Re-annotating swimming images sample with multiclass classification 
 	- swimmer_above_water vs swimmer_below_water
