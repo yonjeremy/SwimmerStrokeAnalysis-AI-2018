@@ -16,7 +16,7 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 | 2| Live video tracking using webcam, using the COCO model |
 | 3| Testing out VOTT (video object tagging tool) and testing out swimmer detection |
 | 4| Creating custom models and training AI to recognize swimmers |
-| 5| TBC |
+| 5| Issue of multi-class classification vs multi-labelling classification |
 
 *See below for detailed breakdown of each week.*
 
@@ -90,3 +90,29 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 - Test case showing preliminary signs of success: 
 
 ![01_test](/media/01_test_case.gif)
+
+**Week 5**
+- Researching and addressing the issue of multiclass vs multi-labelling 
+	- Currently using binary classification, i.e swimmer or not swimmer
+	- Want to differentiate swimmer above water/swimmer below water for stroke count using a sub class of swimmer
+
+ Multi-class classification
+ - The classes are mutually exclusive 
+
+Multi-label classification
+ - Predicting properties of a data-point that are not mutually exclusive
+
+> For example, in the famous leptograspus crabs  [dataset](http://www.stats.ox.ac.uk/pub/PRNN/)  there are examples of males and females of two colour forms of crab. You could approach this as a multi-class problem with four classes (male-blue, female-blue, male-orange, female-orange). As a multi-label problem,  one label would be male/female and the other blue/orange. Essentially in multi-label problems a pattern can belong to more than one class.
+>
+> *Source : https://stats.stackexchange.com/questions/11859/what-is-the-difference-between-multiclass-and-multilabel-problem*
+
+	- VOTT unable to multi-label object for multilabel classification
+	- Posted issue on [VOTT github](https://github.com/Microsoft/VoTT/issues/166)
+
+- Researched problems associated with multilabelling and multiclass object classification
+- Re-annotating swimming images sample with multiclass classification 
+	- swimmer_above_water vs swimmer_below_water
+
+ **Resources**:
+		1. http://scikit-learn.org/stable/modules/multiclass.html
+		2. http://scikit-learn.org/stable/modules/multiclass.html
