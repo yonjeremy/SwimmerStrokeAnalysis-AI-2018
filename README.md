@@ -107,12 +107,13 @@ Multi-label classification
 > *Source : https://stats.stackexchange.com/questions/11859/what-is-the-difference-between-multiclass-and-multilabel-problem*
 
 	- VOTT unable to multi-label object for multilabel classification
-	- Posted issue on [VOTT github](https://github.com/Microsoft/VoTT/issues/166)
+	- Posted issue on VOTT github
+	- https://github.com/Microsoft/VoTT/issues/166
 
 - Researched problems associated with multilabelling and multiclass object classification
 - Re-annotating swimming images sample with multiclass classification 
 	- swimmer_above_water vs swimmer_below_water
 
  **Resources**:
-		1. http://scikit-learn.org/stable/modules/multiclass.html
-		2. http://scikit-learn.org/stable/modules/multiclass.html
+1. http://scikit-learn.org/stable/modules/multiclass.html
+2. http://scikit-learn.org/stable/modules/multiclass.html
