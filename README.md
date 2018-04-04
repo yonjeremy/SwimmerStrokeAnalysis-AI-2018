@@ -168,4 +168,6 @@ Multi-label classification
 
  - Training model with newly created data set
  - VOTT github developers have added multilabel classification as [feature to implement in next release](https://github.com/Microsoft/VoTT/issues/166) 
+ - Clip from output with improved trained model
+	 - ![model with above/below classification](https://media.giphy.com/media/BMfxjXZb0TGFsNldnH/giphy.gif)
  - Trying to resolve issue with pushing local git repo on VM to github 
