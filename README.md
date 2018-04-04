@@ -1,4 +1,5 @@
 
+  
 # Object Tracking Project
 
 This is the README for the Object Tracking project. The program enables the user to track swimmers and storing stroke counts.
@@ -17,6 +18,9 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 | 3| Testing out VOTT (video object tagging tool) and testing out swimmer detection |
 | 4| Creating custom models and training AI to recognize swimmers |
 | 5| Issue of multi-class classification vs multi-labelling classification |
+| 6| Labelling more videos for data set creation
+| 7| Training classifier with new data set
+
 
 *See below for detailed breakdown of each week.*
 
@@ -33,11 +37,41 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 - Pipeling.config file changed for relative files
 ## Issues Encountered
 - Ensuring all dependencies were met suring installtion of software
+
+
+----------
+
+
 - .JPG file extension in the train.py script had to be changed to .jpg lowercase 
+
+
+----------
+
+
 - Using wrong configuration file for the Pascal VOC data set
 	- Issues correctly matching model, configuration file and data set, (Pascal VOC format  & fastercnn model)
+
+
+----------
+
+
 - Initially had the wrong output format when exporting the annotated images from VOTT
 	- Pascal VOC is the format in use
+
+
+----------
+
+
+- Error trying to push repo to github
+> `error: RPC failed; result=22, HTTP code = 413`  
+`fatal: The remote end hung up unexpectedly`  
+`fatal: The remote end hung up unexpectedly`
+> 
+ 
+Could be that local repo is too large, upload buffer is not large enough
+*Source : https://stackoverflow.com/questions/7489813/github-push-error-rpc-failed-result-22-http-code-413*
+
+
 ## Setup
 - **Model**
 	- [Faster R-CNN](https://arxiv.org/abs/1506.01497) with Resnet-101 (v1), configured for Pascal VOC Dataset. Created with this script.  
@@ -109,11 +143,29 @@ Multi-label classification
 	- VOTT unable to multi-label object for multilabel classification
 	- Posted issue on VOTT github
 	- https://github.com/Microsoft/VoTT/issues/166
-- Researched [LabelImg](https://github.com/Labelbox/Labelbox#labelbox-pluggable-interface-architecture) as an alternative tool for labelling. Multi-labels may be [supported](https://github.com/Labelbox/Labelbox/issues/25).
-- Researched problems associated with multilabelling and multiclass object classification
-- Re-annotating swimming images sample with multiclass classification 
+ - Researched [LabelImg](https://github.com/Labelbox/Labelbox#labelbox-pluggable-interface-architecture) as an alternative tool for labelling. Multi-labels may be [supported](https://github.com/Labelbox/Labelbox/issues/25).
+ - Researched problems associated with multilabelling and multiclass object classification
+ - Re-annotating swimming images sample with multiclass classification 
 	- swimmer_above_water vs swimmer_below_water
 
  **Resources**:
-1. http://scikit-learn.org/stable/modules/multiclass.html
-2. http://scikit-learn.org/stable/modules/multiclass.html
+ - http://scikit-learn.org/stable/modules/multiclass.html
+ - https://www.coursera.org/learn/machine-learning/lecture/68Pol/multiclass-classification-one-vs-all
+
+**Week 6**
+
+ - Added to dataset using more video footage provided by Swimming Ireland
+ - Labelling done using two tools, VOTT and LabelImg
+ - SSH keys set up allowing for both developers to access VM used for training
+ 
+ **Resources**:
+ - https://www.youtube.com/watch?v=nw1GexJzbCI
+ - https://cloud.google.com/compute/docs/instances/connecting-to-instance
+ - https://gist.github.com/feczo/7282a6e00181fde4281b
+
+
+**Week 7**
+
+ - Training model with newly created data set
+ - VOTT github developers have added multilabel classification as [feature to implement in next release](https://github.com/Microsoft/VoTT/issues/166) 
+ - Trying to resolve issue with pushing local git repo on VM to github 
