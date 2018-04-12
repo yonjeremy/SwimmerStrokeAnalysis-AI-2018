@@ -1,4 +1,5 @@
 
+
   
 # Object Tracking Project
 
@@ -20,6 +21,8 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 | 5| Issue of multi-class classification vs multi-labelling classification |
 | 6| Labelling more videos for data set creation
 | 7| Training classifier with new data set
+| 8| Testing classifier with new data |
+| 9| Creating project presentation & compiling research
 
 
 *See below for detailed breakdown of each week.*
@@ -164,10 +167,21 @@ Multi-label classification
  - https://gist.github.com/feczo/7282a6e00181fde4281b
 
 
-**Week 7**
+**Week 7/8**
 
  - Training model with newly created data set
  - VOTT github developers have added multilabel classification as [feature to implement in next release](https://github.com/Microsoft/VoTT/issues/166) 
  - Clip from output with improved trained model
-	 - ![model with above/below classification](https://media.giphy.com/media/BMfxjXZb0TGFsNldnH/giphy.gif)
+![model with above/below classification](https://media.giphy.com/media/2eKfegKPDWTgRiV6zt/giphy.gif)
  - Trying to resolve issue with pushing local git repo on VM to github 
+ - Began research & implementation of object tracking using open CV
+	 - Predict swimmer using motion tracking
+	 - Change example scripts to work with swimmer video feed
+	 *- Resource: [Object Tracking Using OpenCV](https://www.google.ie/search?q=open+cv+motion+tracking&rlz=1C1AVNE_enGB701GB706&oq=open+cv+motion+&aqs=chrome.0.69i59j69i57j0l4.2564j0j1&sourceid=chrome&ie=UTF-8)*
+
+**Week 9**
+ - Creating Presentation for project
+	 - Create video overview
+ - Compiling research & outcomes
+ - Add to dataset with more video labelling
+ - Retrain model with newly created dataset
