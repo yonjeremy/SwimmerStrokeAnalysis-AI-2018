@@ -183,5 +183,8 @@ Multi-label classification
  - Creating Presentation for project
 	 - Create video overview
  - Compiling research & outcomes
- - Add to dataset with more video labelling
- - Retrain model with newly created dataset
+ - Processing output data from classification script
+	 - Ignore bounding boxes outside of range of primary swimmer 
+	 - Involves editing [visualization_utils.py](https://github.com/tensorflow/models/blob/master/research/object_detection/utils/visualization_utils.py), script responsible for drawing boxes on output images
+ 	 - Output data to CSV format
+	 - Graph Data
