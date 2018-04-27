@@ -1,11 +1,11 @@
 
 
   
-# Object Tracking Project
+# Swimmer Stroke Analysis using TensorFlow
 
-This is the README for the Object Tracking project. The program enables the user to track swimmers and storing stroke counts.
+This project  focuses on using artificial intelligence and object classification technologies to analyse swimmer performance and generate useful information based on this analysis.. 
 
-## Video Presentation
+## Video Presentation of Project
 
 [![video](https://img.youtube.com/vi/G3ZYpRBI08k/0.jpg)](http://www.youtube.com/watch?v=G3ZYpRBI08k)
 
@@ -25,7 +25,7 @@ The purpose of this project is to explore the use of Google's [Tensorflow](https
 | 6| Labelling more videos for data set creation
 | 7| Training classifier with new data set
 | 8| Testing classifier with new data |
-| 9| Creating project presentation & compiling research
+| 9 & 10| Creating project presentation & compiling research
 
 
 *See below for detailed breakdown of each week.*
