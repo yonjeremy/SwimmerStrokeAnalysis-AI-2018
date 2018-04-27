@@ -8,7 +8,9 @@ This project  focuses on using artificial intelligence and object classification
 ## Video Presentation of Project
 
 [![video](https://img.youtube.com/vi/G3ZYpRBI08k/0.jpg)](http://www.youtube.com/watch?v=G3ZYpRBI08k)
-
+### Project Report & Implementation Documentation 
+- [Design Documentation](https://docs.google.com/document/d/1GicZlOdqCq5s3YiOj0YojXU3kccWyYhxfrKKGWFAr4M)
+- [Implementation Documentation](https://docs.google.com/document/d/1sV1VZflEudkNar_87Mk5gk0z13R6zTFQzJ9DIIo7z1c/edit?usp=sharing)
 ## Description
 
 The purpose of this project is to explore the use of Google's [Tensorflow](https://github.com/tensorflow/tensorflow) machine learning framework, as well as [OpenCV](https://opencv.org/), to combine machine learning and image recognition in order to explore its use in real-world applications. The proposed project is to track swimmers by either sending in a video file or live feed to the program, which then recognizes swimmers based on a dataset, and track the swimmer's movements and number of strokes taken per lap.
