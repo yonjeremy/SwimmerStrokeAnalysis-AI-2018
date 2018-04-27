@@ -5,6 +5,9 @@
 
 This is the README for the Object Tracking project. The program enables the user to track swimmers and storing stroke counts.
 
+## Video Presentation
+
+[![video](https://img.youtube.com/vi/G3ZYpRBI08k/0.jpg)](http://www.youtube.com/watch?v=G3ZYpRBI08k)
 
 ## Description
 
