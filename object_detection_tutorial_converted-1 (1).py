@@ -2,12 +2,7 @@
 # coding: utf-8
 
 # # Object Detection Demo
-# Welcome to the object detection inference walkthrough!  This notebook will walk you step by step through the process of using a pre-trained model to detect objects in an image. Make sure to follow the [installation instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) before you start.
-
-# # Imports
-
-# In[11]:
-
+# Tensorflow provided script altered by DaireNiC & Jeremy Yon
 
 import numpy as np
 import os
@@ -23,10 +18,9 @@ from matplotlib import pyplot as plt
 from PIL import Image
 
 import cv2
-
+#adding open cv for video input
 cap = cv2.VideoCapture('videoplayback.mp4')
 
-#s is needed since the notebook is stored in the object_detection folder.
 sys.path.append("..")
 
 
@@ -45,15 +39,6 @@ from utils import visualization_utils as vis_util
 # ## Variables
 # 
 # Any model exported using the `export_inference_graph.py` tool can be loaded here simply by changing `PATH_TO_CKPT` to point to a new .pb file.  
-# 
-# By default we use an "SSD with Mobilenet" model here. See the [detection model zoo](https://github.com/tensorflow/models/blob/master/object_detection/g3doc/detection_model_zoo.md) for a list of other models that can be run out-of-the-box with varying speeds and accuracies.
-
-# In[4]:
-
-# What model to download.
-#MODEL_NAME = 'ssd_mobilenet_v1_coco_11_06_2017'
-#MODEL_FILE = MODEL_NAME + '.tar.gz'
-#DOWNLOAD_BASE = 'http://download.tensorflow.org/models/object_detection/'
 
 # Path to frozen detection graph. This is the actual model that is used for the object detection.
 #PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
@@ -61,26 +46,8 @@ PATH_TO_CKPT =  '/home/dairenichat/object-tracking-project-2018/tensorflow/model
 # List of the strings that is used to add correct label for each box.
 PATH_TO_LABELS = os.path.join('/home/dairenichat/object-tracking-project-2018/tensorflow/models/research/data', 'pascal_label_map.pbtxt')
 
+# swimmer above & below water
 NUM_CLASSES = 2
-
-
-# ## Download Model
-
-# In[5]:
-
-#opener = urllib.request.URLopener()
-#opener.retrieve(DOWNLOAD_BASE + MODEL_FILE, MODEL_FILE)
-#tar_file = tarfile.open(MODEL_FILE)
-#for file in tar_file.getmembers():
- # file_name = os.path.basename(file.name)
- # if 'frozen_inference_graph.pb' in file_name:
- #   tar_file.extract(file, os.getcwd())
-
-
-#
-# ## Load a (frozen) Tensorflow model into memory.
-
-# In[6]:
 
 detection_graph = tf.Graph()
 with detection_graph.as_default():
@@ -112,21 +79,7 @@ def load_image_into_numpy_array(image):
 
 
 # # Detection
-
-# In[9]:
-
-# For the sake of simplicity we will use only 2 images:
-# image1.jpg
-# image2.jpg
-# If you want to test the code with your images, just add path to the images to the TEST_IMAGE_PATHS.
-#PATH_TO_TEST_IMAGES_DIR = 'test_images'
-#TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR, 'image{}.jpg'.format(i)) for i in range(1, 3) ]
-
-# Size, in inches, of the output images.
-#IMAGE_SIZE = (12, 8)
-
-# In[10]:
-
+# created loop for video feed iteration 
 i=0
 with detection_graph.as_default():
   with tf.Session(graph=detection_graph) as sess:
@@ -156,7 +109,7 @@ with detection_graph.as_default():
           category_index,
           use_normalized_coordinates=True,
           line_thickness=8)
-     # cv2.imshow('object detection', cv2.resize(image_np, (800,600)))
+      cv2.imshow('object detection', cv2.resize(image_np, (800,600)))
       cv2.imwrite( '/home/dairenichat/object-tracking-project-2018/tensorflow/models/research/output_images_04/imageresized_{}.jpg'.format(i) ,cv2.resize(image_np, (600,600)))
       print 'imageresized_{}.jpg'.format(i)
       if cv2.waitKey(25) & 0xFF == ord('q'):
